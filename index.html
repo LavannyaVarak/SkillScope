@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillScope - Your Career Guide to Trending Skills</title>
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+    <style>
+      :root {
+        --recharts-text: #71717a; /* zinc-500 */
+        --recharts-grid: #e4e4e7; /* zinc-200 */
+        --recharts-tooltip-bg: #ffffff;
+        --recharts-tooltip-border: #d4d4d8; /* zinc-300 */
+        --recharts-tooltip-text: #18181b; /* zinc-900 */
+        --logo-stroke-color: #18181b; /* zinc-900 */
+      }
+      .dark {
+        --recharts-text: #a1a1aa; /* zinc-400 */
+        --recharts-grid: #3f3f46; /* zinc-700 */
+        --recharts-tooltip-bg: #27272a; /* zinc-800 */
+        --recharts-tooltip-border: #52525b; /* zinc-600 */
+        --recharts-tooltip-text: #e4e4e7; /* zinc-200 */
+        --logo-stroke-color: #ffffff;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/mammoth@1.7.0/mammoth.browser.min.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#00CFFF', // Electric Blue
+              'primary-focus': '#00B8E6',
+              'secondary': '#F500F5', // Vivid Magenta
+              'secondary-focus': '#D900D9',
+              'accent-lime': '#39FF14', // Neon Lime
+            },
+            boxShadow: {
+              'glow-primary': '0 0 15px rgba(0, 207, 255, 0.6)',
+              'glow-secondary': '0 0 15px rgba(245, 0, 245, 0.6)',
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'pulse-mic': {
+                '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                '50%': { transform: 'scale(1.2)', opacity: '0.7' },
+              }
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.3s ease-out forwards',
+              'fade-in': 'fade-in 0.5s ease-out forwards',
+              'pulse-mic': 'pulse-mic 1.5s ease-in-out infinite',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0",
+    "pdfjs-dist": "https://unpkg.com/pdfjs-dist@4.4.168/build/pdf.min.mjs",
+    "jspdf": "https://unpkg.com/jspdf@2.5.1/dist/jspdf.es.min.js",
+    "html2canvas": "https://cdn.skypack.dev/html2canvas",
+    "@babel/runtime/": "https://cdn.skypack.dev/@babel/runtime@7.24.7/",
+    "fflate": "https://cdn.skypack.dev/fflate"
+  }
+}
+</script>
+</head>
+  <body class="bg-neutral-100 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
