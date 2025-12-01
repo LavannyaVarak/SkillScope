@@ -15,7 +15,7 @@ const FeedbackPage: React.FC<FeedbackPageProps> = ({ t }) => {
     // 2. Click 'Send' -> '< >' (Embed HTML) -> Copy the URL inside 'src="..."'
     // 3. Paste the URL inside the quotes below.
     // -----------------------------------------------------------------------------------------
-    const googleFormUrl: string = "https://docs.google.com/forms/d/e/1FAIpQLScEEeW1hgeWB41lWgWSEEUvpzPztauMW9c-9m0-n1vq-Hqhog/viewform?embedded=true"; 
+    const googleFormUrl: string = "https://docs.google.com/forms/d/e/1FAIpQLSetnU92EBZBhaZQcfsuNwUmwlHkJFlzdaKbQ_iFL6qb0fUpkg/viewform?embedded=true"; 
     // Example format: "https://docs.google.com/forms/d/e/1FAIpQLSc.../viewform?embedded=true"
 
     const isConfigured = googleFormUrl && !googleFormUrl.includes('PLACEHOLDER');
