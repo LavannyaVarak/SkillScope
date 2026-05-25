@@ -26,4 +26,4 @@ View your app in AI Studio: https://ai.studio/apps/drive/159pCCusDyLB9KbQ5sJ05G-
 SkillScope is our semester project.
 
 ## Demo Video
-Watch the project demo here: [SkillScope Demo Video](https://drive.google.com/file/d/1KmdaceEuNcNKRTaPyRjY2mqENFDtZQQQ/view?usp=sharing)
+Watch the project demo here: [SkillScope Demo Video](https://drive.google.com/file/d/1YYiiNXnfzEZov5rQvdn4V_ZY4CHVrbt8/view?usp=sharing)
