@@ -18,3 +18,12 @@ View your app in AI Studio: https://ai.studio/apps/drive/159pCCusDyLB9KbQ5sJ05G-
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+
+
+# SkillScope
+
+SkillScope is our semester project.
+
+## Demo Video
+Watch the project demo here: [SkillScope Demo Video](https://drive.google.com/file/d/1KmdaceEuNcNKRTaPyRjY2mqENFDtZQQQ/view?usp=sharing)
