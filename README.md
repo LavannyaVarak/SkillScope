@@ -27,3 +27,6 @@ SkillScope is our semester project.
 
 ## Demo Video
 Watch the project demo here: [SkillScope Demo Video](https://drive.google.com/file/d/1YYiiNXnfzEZov5rQvdn4V_ZY4CHVrbt8/view?usp=sharing)
+
+Click here to watch the project demo:  
+[Watch SkillScope Demo Video](https://drive.google.com/file/d/1YYiiNXnfzEZov5rQvdn4V_ZY4CHVrbt8/view?usp=sharing)
